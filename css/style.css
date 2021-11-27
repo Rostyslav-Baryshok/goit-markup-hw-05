@@ -448,10 +448,11 @@ body {
   border-radius: 3px;
   border: 1px solid #afb1b8;
   color: var(--accent-color);
-  transition: color 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
 }
 .our-clients-img {
   fill: #afb1b8;
+  transition: fill 250ms var(--timing-function);
 }
 .our-clients-link:hover,
 .our-clients-link:focus {
