@@ -152,6 +152,7 @@ body {
   justify-content: space-between;
 }
 .social-networks-item:not(:last-child) {
+  transition: color 250ms var(--timing-function);
   margin-right: 10px;
 }
 .social-networks-link {
@@ -163,6 +164,7 @@ body {
   border-radius: 50%;
   background-color: transparent;
   fill: #afb1b8;
+  transition: background-color 250ms var(--timing-function);
 }
 .profession {
   font-weight: 400;
@@ -226,6 +228,7 @@ body {
   padding-bottom: 32px;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  transition: color 250ms var(--timing-function);
 }
 .menu-link.current::after {
   position: absolute;
@@ -258,6 +261,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  transition: color 250ms var(--timing-function);
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -313,6 +317,7 @@ body {
   border: 0;
 }
 .backdrop.is-hidden {
+  visibility: none;
   opacity: 0;
   pointer-events: none;
 }
@@ -462,6 +467,7 @@ body {
 .contact-link-footer,
 .contact-link-footer {
   color: var(--contact-link-footer);
+  transition: color 250ms var(--timing-function);
 }
 .contact-link-footer:hover,
 .contact-link-footer:focus {
