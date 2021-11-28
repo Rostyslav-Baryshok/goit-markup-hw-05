@@ -9,6 +9,7 @@
   --contact-link-footer: rgba(255, 255, 255, 0.6);
   --social-networks-color: #ffffff;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --fill-color-svg: #afb1b8;
 }
 h1,
 h2,
@@ -128,17 +129,16 @@ body {
   bottom: 0;
   left: 0;
   background-color: rgba(47, 48, 58, 0.8);
-  width: 370px;
-  height: 70px;
+  width: 100%;
   position: absolute;
   display: flex;
+  justify-content: center;
 }
 .duing-content {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin: 27px 85px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   text-transform: uppercase;
   color: var(--white-text);
 }
@@ -186,8 +186,8 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: transparent;
-  fill: #afb1b8;
-  transition: background-color 250ms var(--timing-function);
+  fill: var(--fill-color-svg);
+  transition: background-color 250ms, fill 250ms;
 }
 .profession {
   font-weight: 400;
@@ -345,7 +345,7 @@ body {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  transform: scale(1.4);
+  transform: translate(-50%, -50%) scale(0.7);
 }
 .backdrop {
   position: fixed;
@@ -362,7 +362,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms;
   min-width: 528px;
   min-height: 581px;
@@ -378,6 +378,7 @@ body {
   top: 8px;
   right: 8px;
   border-radius: 50%;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -446,12 +447,12 @@ body {
   width: 170px;
   height: 92px;
   border-radius: 3px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--fill-color-svg);
   color: var(--accent-color);
   transition: border 250ms var(--timing-function);
 }
 .our-clients-img {
-  fill: #afb1b8;
+  fill: var(--fill-color-svg);
   transition: fill 250ms var(--timing-function);
 }
 .our-clients-link:hover,
