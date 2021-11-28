@@ -71,7 +71,7 @@ body {
 
 .portfolio-card-description {
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -189,15 +189,6 @@ body {
   fill: var(--fill-color-svg);
   transition: background-color 250ms, fill 250ms;
 }
-.profession {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  margin-bottom: 16px;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-}
 .social-networks-link:hover,
 .social-networks-link:focus,
 .footer-social-media-link:hover,
@@ -208,6 +199,15 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+}
+.profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 .navigation {
   display: flex;
@@ -256,7 +256,7 @@ body {
 .menu-link.current::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   content: "";
   display: block;
   width: 100%;
@@ -448,21 +448,21 @@ body {
   height: 92px;
   border-radius: 3px;
   border: 1px solid var(--fill-color-svg);
-  color: var(--accent-color);
+  color: var(--fill-color-svg);
   transition: border 250ms var(--timing-function);
 }
 .our-clients-img {
-  fill: var(--fill-color-svg);
-  transition: fill 250ms var(--timing-function);
+  fill: currentColor;
+  transition: color 250ms var(--timing-function);
 }
 .our-clients-link:hover,
 .our-clients-link:focus {
-  border-color: currentColor;
+  border-color: var(--accent-color);
 }
 
 .our-clients-link:hover .our-clients-img,
 .our-clients-link:focus .our-clients-img {
-  fill: currentColor;
+  color: var(--accent-color);
 }
 /* Footer */
 .footer {
