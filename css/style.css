@@ -445,7 +445,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 170px;
-  height: 92px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-radius: 3px;
   border: 1px solid var(--fill-color-svg);
   color: var(--fill-color-svg);
